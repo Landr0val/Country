@@ -10,7 +10,9 @@
   },
   "scripts": {
     "start": "bun dev",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "predeploy": "bun run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
