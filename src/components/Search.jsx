@@ -20,7 +20,7 @@ const Search = () => {
         return res.json();
       })
       .then((data) => {
-        setName(data[0].name),
+          return setName(data[0].name),
           setFlag(data[0].flags.svg),
           setLang(data[0].languages[Object.keys(data[0].languages)[0]]),
           setContinent(data[0].continents),
